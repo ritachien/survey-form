@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background */
+  background-image: url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  /* fonts */
+  font-family: sans-serif;
+  font-size: 10px;
+  color: rgba(107, 55, 13, 0.89);
+  text-align: center;
+}
+
+.container {
+  /* for background blur */
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2.5px);
+}
+
+header {
+  color: rgb(73, 38, 10);
+}
+
+header h1 {
+  margin: 0 auto 0.5rem;
+  padding-top: 10vh;
+  font-size: 2.5rem;
+
+}
+
+header p {
+  margin: 0.5rem auto 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+form {
+  max-width: 500px;
+  min-width: 250px;
+  width: 60vw;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  background-color: rgba(236, 223, 180, 0.8);
+}
+
+button,
+input,
+select,
+textarea {
+  border: 1px solid rgb(155, 118, 70);
+  border-radius: 0.3rem;
+  line-height: 1.6rem;
+}
+
+
+
+fieldset {
+  border: none;
+}
+
+fieldset h2 {
+  margin: 0 auto 1rem;
+  font-size: 1.6rem;
+}
+
+.form-item {
+  margin: 3rem;
+  width: 100%;
+  display: block;
+  margin: 0.9rem 0;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.radio {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.personal-info label {
+  width: 3.5rem;
+  margin: 0 1.3rem;
+  display: inline-block;
+}
+
+.personal-info input {
+  min-width: 5rem;
+  width: 75%;
+  display: inline-block;
+}
+
+.personal-info .gender {
+  margin-left: 0.3rem;
+  width: 2rem;
+}
+
+.personal-info input[name="gender"] {
+  margin-left: 0.5rem;
+  width: 1rem;
+}
+
+
+
+.preferences label {
+  width: 20%;
+  min-width: 6rem;
+  margin: 0 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+select {
+  width: 73.5%;
+  height: 1.8rem;
+}
+
+.allergens,
+.other {
+  display: flex;
+  align-items: flex-start;
+}
+
+.checkboxes {
+  width: 75%;
+  padding: 0;
+  display: inline-block;
+}
+
+.item {
+  width: 10rem;
+  display: inline-block;
+}
+
+.item input {
+  display: inline;
+}
+
+.item label {
+  width: 15rem;
+  display: inline;
+}
+
+.other textarea {
+  width: 73.5%;
+}
+
+button {
+  width: 6rem;
+  margin-top: 1.5rem;
+  color: rgb(107, 55, 13);
+  font-size: 1rem;
+  font-weight: 700;
+}

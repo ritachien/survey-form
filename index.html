@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <title>RC's Home-made Delicious</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">RC's Home-made Delicious</h1>
+      <p id="description">Still struggling with cooking? Order for custom meal!</p>
+    </header>
+
+    <form id="survey-form">
+      <fieldset class="personal-info">
+        <h2>Personal Information</h2>
+        <div class="form-item">
+          <label id="name-label" for="name">Name: </label>
+          <input id="name" type="text" placeholder="Please enter your name" required>
+        </div>
+
+        <div class="form-item">
+          <label id="email-label" for="email">Email: </label>
+          <input id="email" type="email" placeholder="abc@example.com" required>
+        </div>
+
+        <div class="form-item">
+          <label id="number-label" for="number">Age: </label>
+          <input id="number" type="number" min="18" max="120" placeholder="Only for age over 18" required>
+        </div>
+
+        <div class="form-item radio">
+          <label id="gender-label">Gender: </label>
+          <input type="radio" name="gender" id="male" value="male" checked>
+          <label class="gender" for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female">
+          <label class="gender" for="female">Female</label>
+        </div>
+      </fieldset>
+      <hr>
+
+      <fieldset class="preferences">
+        <h2>Preferences</h2>
+        <div class="form-item">
+          <label for="dropdown">Meals time: </label>
+          <select id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+          </select>
+        </div>
+
+        <div class="form-item allergens">
+          <label for="allergens">Allergens: </label>
+          <div class="checkboxes">
+            <div class="item">
+              <input id="allergens" type="checkbox" value="milk">
+              <label class="checkbox-item">Milk</label>
+            </div>
+            <div class="item"><input id="allergens" type="checkbox" value="egg">
+              <label class="checkbox-item">Egg</label>
+            </div>
+            <div class="item"><input id="allergens" type="checkbox" value="fish">
+              <label class="checkbox-item">Fish</label>
+            </div>
+            <div class="item"><input id="allergens" type="checkbox" value="tree-nuts">
+              <label class="checkbox-item">Tree nuts</label>
+            </div>
+            <div class="item"><input id="allergens" type="checkbox" value="peanuts">
+              <label class="checkbox-item">Peanuts</label>
+            </div>
+            <div class="item"><input id="allergens" type="checkbox" value="wheat">
+              <label class="checkbox-item">Wheats</label>
+            </div>
+            <div class="item"><input id="allergens" type="checkbox" value="soybeans">
+              <label class="checkbox-item">Soybeans</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-item other">
+          <label>Other: </label>
+          <textarea placeholder="Anything else that you want us to know..." rows="5"></textarea>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
